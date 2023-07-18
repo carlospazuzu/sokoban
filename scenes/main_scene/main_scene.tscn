@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://cwqgn4isygbhg"]
+
+[ext_resource type="Script" path="res://scenes/main_scene/main_scene.gd" id="1_hw262"]
+[ext_resource type="FontFile" uid="uid://dstfswappvmmx" path="res://assets/fonts/brick.ttf" id="2_sor7r"]
+[ext_resource type="FontFile" uid="uid://ceje7ndj0pyf3" path="res://assets/fonts/Molot.otf" id="3_xm4ub"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_sussc"]
+font = ExtResource("2_sor7r")
+font_size = 240
+font_color = Color(0.945098, 0.329412, 0.384314, 1)
+outline_size = 20
+outline_color = Color(0.960784, 0.470588, 0.345098, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_8q7c5"]
+font = ExtResource("3_xm4ub")
+font_size = 80
+font_color = Color(0.960784, 0.470588, 0.345098, 1)
+
+[node name="MainScene" type="Node2D"]
+script = ExtResource("1_hw262")
+metadata/_edit_vertical_guides_ = [576.394]
+metadata/_edit_horizontal_guides_ = [325.615]
+
+[node name="TitleLabel" type="Label" parent="."]
+offset_left = 39.0
+offset_top = 207.0
+offset_right = 1114.0
+offset_bottom = 450.0
+text = "SOKOBAN"
+label_settings = SubResource("LabelSettings_sussc")
+
+[node name="PressAnyKeyLabel" type="Label" parent="."]
+offset_left = 284.0
+offset_top = 450.0
+offset_right = 860.0
+offset_bottom = 545.0
+text = "Press Any Key"
+label_settings = SubResource("LabelSettings_8q7c5")

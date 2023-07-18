@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://bc3sig0474skw"]
+
+[ext_resource type="Texture2D" uid="uid://b6hekdgcuejai" path="res://assets/player/front/player_05.png" id="1_580r1"]
+[ext_resource type="Texture2D" uid="uid://b3sglneo4fu5r" path="res://assets/player/front/player_06.png" id="2_xwufm"]
+[ext_resource type="Texture2D" uid="uid://cy43iswtd7pd6" path="res://assets/player/front/player_07.png" id="3_fshsc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l4erm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_580r1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_xwufm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_580r1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fshsc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[node name="WalkingPlayer" type="AnimatedSprite2D"]
+position = Vector2(0, 2)
+sprite_frames = SubResource("SpriteFrames_l4erm")
+autoplay = "default"
+frame_progress = 0.0540556
