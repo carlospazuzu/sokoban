@@ -120,5 +120,5 @@ animations = [{
 [node name="Player" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_fj2lj")
 animation = &"walk_right"
-frame_progress = 0.276397
+frame_progress = 0.582584
 script = ExtResource("13_imgw1")
