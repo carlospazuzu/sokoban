@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjbjs0eilggl2"]
+
+[ext_resource type="PackedScene" uid="uid://sqjo4lnxjo8n" path="res://objects/player/player.tscn" id="1_6rmeh"]
+
+[node name="TestScene" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_6rmeh")]
+position = Vector2(635, 297)
+animation = &"walk_down"
+frame_progress = 0.0
