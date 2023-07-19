@@ -7,7 +7,6 @@ var direction = -1
 var transparency_value = 255
 
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -20,6 +19,9 @@ func _process(delta):
 	
 	if transparency_value > 255 || transparency_value < 0:
 		direction *= -1
+		
+	if Input.is_action_just_released("ui_accept"):
+		get_tree().change_scene_to_file("res://scenes/test_scene/test_scene.tscn")
 
 
 func _draw():
